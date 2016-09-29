@@ -1,3 +1,7 @@
 export function selectBook(book) {
-	console.log('Selected book:', book.title)
+  // must return Action, object with 'type' propety
+  return {
+    type: 'BOOK_SELECTED',
+    payload: book
+  }
 }
